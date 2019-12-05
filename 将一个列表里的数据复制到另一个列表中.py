@@ -1,5 +1,11 @@
-list1=[1,2,3,4]
+list1=[4,3,2,1]
 list2=[]
+list3=[]
+for i in range(len(list1)):
+    print(list1[i])
 for i in list1:
     list2.append(i)
-print(list2)'
+list2.sort(reverse=False)
+print(list2)
+list3=sorted(list2)
+print(list3)
