@@ -1,10 +1,10 @@
-print("1~200的素数有:")
-for n in range(1,201):
-    flag=1
-    for i in range(2,n):
-        if n%i==0:
-            flag=0
-            break
-    if flag==1:
-        print(n,end=" ")
-
+#1.有四个数字：1、2、3、4，能组成多少个互不相同且无重复数字的三位数？各是多少？
+counter=0
+for i in range(1,5):
+    for j in range(1,5):
+        for k in range(1,5):
+            if i !=j and j !=k and k !=i:
+                print("{}{}{}".format(i,j,k),end=" ")
+                counter +=1
+print(" ")
+print("共{}种组合".format(counter))

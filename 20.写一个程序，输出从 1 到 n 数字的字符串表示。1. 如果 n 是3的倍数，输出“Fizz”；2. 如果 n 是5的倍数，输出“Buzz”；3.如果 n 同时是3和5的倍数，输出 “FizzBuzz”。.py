@@ -1,12 +1,16 @@
-n=int(input())
-a_list=[]
-for i in a_list(range(1,n+1)):
-    if n%3==0:
-        a_list.append("Fizz")
-    elif n%5==0:
-        a_list.append("Buzz")
-    elif n%3==0 and n%5==0:
-        a_list.append("FizzBuzz")
+#20.写一个程序，输出从 1 到 n 数字的字符串表示。
+#1. 如果 n 是3的倍数，输出“Fizz”；
+#2. 如果 n 是5的倍数，输出“Buzz”；
+#3.如果 n 同时是3和5的倍数，输出 “FizzBuzz”
+n = int(input())
+result = []
+for i in range(1, n + 1):
+    if i % 3 == 0 and i % 5 == 0:
+        result.append('FizzBuzz')
+    elif i % 3 == 0:
+        result.append('Fizz')
+    elif i % 5 == 0:
+        result.append('Buzz')
     else:
-        a_list.append(int(n))
-print(a_list)
+        result.append(str(i))
+print(','.join(result))

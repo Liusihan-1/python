@@ -1,7 +1,8 @@
-x=y=0
-while True:
-    x+=1
-    if not(x%2):coutinue
-    elif x>100:break
-    else:y+=x
-print("y=,",y)
+#1-100所有奇数的和
+sum=0
+for i in range(1,101):
+    if i%2!=0:
+        sum=sum+i
+        i+=1
+print(f"1-100所有奇数的和是：{sum}")
+    
